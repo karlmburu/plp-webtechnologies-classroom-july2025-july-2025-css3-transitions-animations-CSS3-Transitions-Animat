@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+header, footer {
+  background: #222;
+  color: white;
+  padding: 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+/* Box Styling */
+#box {
+  width: 100px;
+  height: 100px;
+  background: steelblue;
+  margin: 20px auto;
+  border-radius: 8px;
+  transition: transform 0.5s ease, background 0.5s ease;
+}
+
+/* Hover Transition */
+#box:hover {
+  transform: scale(1.1);
+  background: teal;
+}
+
+/* Keyframe Animation */
+@keyframes moveAndFade {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-100px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate {
+  animation: moveAndFade 2s ease-in-out;
+}
